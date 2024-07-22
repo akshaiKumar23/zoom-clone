@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import SideBar from "@/components/SideBar";
+import { Metadata } from "next";
 import { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "AOOM",
+  description: "Video Calling App",
+  icons: {
+    icon: "/icons/logo.svg",
+  },
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
